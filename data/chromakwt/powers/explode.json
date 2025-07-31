@@ -12,7 +12,7 @@
         },
         "max_action": {
             "type": "origins:execute_command",
-            "command": "execute as @s run function chromakwt:explosion"
+            "command": "function chromakwt:explosion"
         }
     },
     "death": {

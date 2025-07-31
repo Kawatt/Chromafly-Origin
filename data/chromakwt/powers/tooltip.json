@@ -1,0 +1,30 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "normal": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "*:dyes"
+            }
+        },
+        "text": {
+            "text": "Consume for +10 color",
+            "color": "gray"
+        }
+    },
+    "great": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "*:dyes_great"
+            }
+        },
+        "text": {
+            "text": "Consume for +20 color",
+            "color": "gray"
+        }
+    }
+}

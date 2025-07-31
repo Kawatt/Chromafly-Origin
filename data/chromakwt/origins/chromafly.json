@@ -19,7 +19,8 @@
 		"chromakwt:fuel",
 		"chromakwt:flydown",
 		"chromakwt:toobright",
-		"chromakwt:darkness"
+		"chromakwt:darkness",
+		"chromakwt:tooltip"
 	],
 	"icon": {
 		"item": "minecraft:spectral_arrow",
