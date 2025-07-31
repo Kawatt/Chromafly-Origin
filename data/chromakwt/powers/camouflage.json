@@ -1,22 +1,43 @@
 {
-  "name": "§c§nCamouflage",
-  "description": "§cYou can make your armor look transparent.",
-  "type": "origins:multiple",
-  "toggle": {
-    "type": "origins:toggle",
-    "active_by_default": false,
-		"key": {
-			"key": "key.saveToolbarActivator"
-		}
-  },
-  "hidearmor": {
-    "type": "origins:prevent_feature_render",
-    "features": [
-      "armor"
-    ],
-    "condition": {
-      "type": "origins:power_active",
-			"power": "*:*_toggle"
+    "name": "§c§nCamouflage",
+    "description": "§cYou can make your armor look transparent.",
+    "type": "origins:multiple",
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "retain_state": true,
+        "key": {
+            "key": "key.saveToolbarActivator"
+        },
+        "condition": {
+            "type": "apoli:resource",
+            "resource": "*:*_disable",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "hidearmor": {
+        "type": "origins:prevent_feature_render",
+        "features": [
+            "armor"
+        ],
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "disable": {
+        "type": "apoli:cooldown",
+        "cooldown": 40,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "hit": {
+        "type": "apoli:self_action_on_hit",
+        "entity_action": {
+            "type": "apoli:trigger_cooldown",
+            "power": "*:*_disable"
+        }
     }
-  }
 }
