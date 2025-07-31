@@ -1,6 +1,24 @@
 {
     "name": "§c§nCamouflage",
     "description": "§cYou can make your armor look transparent.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/toggle.png",
+            "text": [
+                "Toggle with [",
+                {
+                    "keybind": "key.saveToolbarActivator"
+                },
+                "]."
+            ]
+        },
+        {
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/info.png",
+            "text": "When hit, the armor will be visible for a short time."
+        }
+    ],
     "type": "origins:multiple",
     "toggle": {
         "type": "origins:toggle",
@@ -12,7 +30,7 @@
         "condition": {
             "type": "apoli:resource",
             "resource": "*:*_disable",
-            "comparison": ">",
+            "comparison": "==",
             "compare_to": 0
         }
     },
@@ -34,7 +52,7 @@
         }
     },
     "hit": {
-        "type": "apoli:self_action_on_hit",
+        "type": "apoli:self_action_when_hit",
         "entity_action": {
             "type": "apoli:trigger_cooldown",
             "power": "*:*_disable"
