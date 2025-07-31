@@ -41,46 +41,52 @@
                         "action": {
                             "type": "origins:and",
                             "actions": [
-                              {
-                                  "type": "origins:apply_effect",
-                                  "effect": {
-                                      "effect": "minecraft:wither",
-                                      "duration": 100,
-                                      "amplifier": 0
-                                  }
-                              },
-                              {
-                                  "type": "origins:apply_effect",
-                                  "effect": {
-                                      "effect": "minecraft:blindness",
-                                      "duration": 100,
-                                      "amplifier": 0
-                                  }
-                              },
-                              {
-                                  "type": "origins:grant_power",
-                                  "power": "*:darkworld",
-                                  "source": "*:colorsuck"
-                              },
-                              {
-                                "type": "origins:play_sound",
-                                "sound": "minecraft:ambient.soul_sand_valley.mood"
-                              }
-                          ]
-                      }
-                  },
-                  {
-                      "type": "origins:actor_action",
-                      "action": {
-                          "type": "origins:change_resource",
-                          "resource": "*:colormeter",
-                          "change": 80
-                      }
-                  }
-              ]
-          },
-          "command_along_ray": "function chromakwt:ark",
-          "command_step": 1
+                                {
+                                    "type": "origins:apply_effect",
+                                    "effect": {
+                                        "effect": "minecraft:wither",
+                                        "duration": 100,
+                                        "amplifier": 0
+                                    }
+                                },
+                                {
+                                    "type": "origins:apply_effect",
+                                    "effect": {
+                                        "effect": "minecraft:blindness",
+                                        "duration": 100,
+                                        "amplifier": 0
+                                    }
+                                },
+                                {
+                                    "type": "origins:grant_power",
+                                    "power": "*:darkworld",
+                                    "source": "*:colorsuck"
+                                },
+                                {
+                                    "type": "origins:play_sound",
+                                    "sound": "minecraft:ambient.soul_sand_valley.mood"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "origins:actor_action",
+                        "action": {
+                            "type": "origins:change_resource",
+                            "resource": "*:colormeter",
+                            "change": 80
+                        }
+                    }
+                ]
+            },
+            "bientity_condition": {
+                "type": "apoli:target_condition",
+                "condition": {
+                    "type": "apoli:living"
+                }
+            },
+            "command_along_ray": "function chromakwt:ark",
+            "command_step": 1
         },
         "cooldown": 2400,
         "hud_render": {
