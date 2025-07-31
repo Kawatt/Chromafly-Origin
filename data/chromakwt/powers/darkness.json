@@ -1,133 +1,133 @@
 {
-  "name": "§0§nScared of the Dark",
-  "description": "§0Darkness weakens you and makes you lose the ability to regenerate naturally.",
-  "type": "origins:multiple",
-  "regen": {
-    "type": "origins:disable_regen",
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:status_effect",
-          "effect": "minecraft:glowing",
-          "inverted": true
-        },
-        {
-          "type": "origins:or",
-          "conditions": [
-            {
-              "type": "origins:and",
-              "conditions": [
+    "name": "§0§nScared of the Dark",
+    "description": "§0Darkness weakens you and makes you lose the ability to regenerate naturally.",
+    "type": "origins:multiple",
+    "regen": {
+        "type": "origins:disable_regen",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
                 {
-                  "type": "origins:in_block",
-                  "block_condition": {
-                    "type": "origins:light_level",
-                    "comparison": "<",
-                    "compare_to": 3
-                  }
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:glowing",
+                    "inverted": true
                 },
                 {
-                  "type": "origins:daytime"
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:in_block",
+                                    "block_condition": {
+                                        "type": "origins:light_level",
+                                        "comparison": "<",
+                                        "compare_to": 3
+                                    }
+                                },
+                                {
+                                    "type": "origins:daytime"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:in_block",
+                                    "block_condition": {
+                                        "type": "origins:light_level",
+                                        "light_type": "block",
+                                        "comparison": "<",
+                                        "compare_to": 3
+                                    }
+                                },
+                                {
+                                    "type": "origins:daytime",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "type": "origins:and",
-              "conditions": [
-                {
-                  "type": "origins:in_block",
-                  "block_condition": {
-                    "type": "origins:light_level",
-                    "light_type": "block",
-                    "comparison": "<",
-                    "compare_to": 3
-                  }
-                },
-                {
-                  "type": "origins:daytime",
-                  "inverted": true
-                }
-              ]
-            }
-          ]
+            ]
         }
-      ]
-    }
-  },
-  "wither": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "effect": "minecraft:wither",
-        "duration": 9999999,
-        "amplifier": 0,
-        "is_ambient": true,
-        "show_particles": true,
-        "show_icon": false
-      }
     },
-    "falling_action": {
-      "type": "origins:clear_effect",
-      "effect": "minecraft:wither"
-    },
-    "interval": 40,
-    "condition": {
-      "type": "origins:and",
-      "conditions": [
-        {
-          "type": "origins:status_effect",
-          "effect": "minecraft:glowing",
-          "inverted": true
-        },
-        {
-          "type": "origins:or",
-          "conditions": [
-            {
-              "type": "origins:and",
-              "conditions": [
-                {
-                  "type": "origins:in_block",
-                  "block_condition": {
-                    "type": "origins:light_level",
-                    "comparison": "<",
-                    "compare_to": 3
-                  }
-                },
-                {
-                  "type": "origins:daytime"
-                }
-              ]
-            },
-            {
-              "type": "origins:and",
-              "conditions": [
-                {
-                  "type": "origins:in_block",
-                  "block_condition": {
-                    "type": "origins:light_level",
-                    "light_type": "block",
-                    "comparison": "<",
-                    "compare_to": 3
-                  }
-                },
-                {
-                  "type": "origins:daytime",
-                  "inverted": true
-                }
-              ]
+    "wither": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:wither",
+                "duration": 9999999,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": true,
+                "show_icon": false
             }
-          ]
+        },
+        "falling_action": {
+            "type": "origins:clear_effect",
+            "effect": "minecraft:wither"
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:glowing",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:in_block",
+                                    "block_condition": {
+                                        "type": "origins:light_level",
+                                        "comparison": "<",
+                                        "compare_to": 3
+                                    }
+                                },
+                                {
+                                    "type": "origins:daytime"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "origins:and",
+                            "conditions": [
+                                {
+                                    "type": "origins:in_block",
+                                    "block_condition": {
+                                        "type": "origins:light_level",
+                                        "light_type": "block",
+                                        "comparison": "<",
+                                        "compare_to": 3
+                                    }
+                                },
+                                {
+                                    "type": "origins:daytime",
+                                    "inverted": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
-      ]
+    },
+    "extendbrightness": {
+        "type": "origins:modify_status_effect_duration",
+        "status_effect": "minecraft:glowing",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 5
+        }
     }
-  },
-  "extendbrightness": {
-    "type": "origins:modify_status_effect_duration",
-    "status_effect": "minecraft:glowing",
-    "modifier": {
-      "operation": "multiply_total",
-      "value": 5
-    }
-  }
 }

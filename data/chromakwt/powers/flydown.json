@@ -1,13 +1,13 @@
 {
-  "hidden": true,
-  "type": "origins:action_over_time",
-  "entity_action": {
-    "type": "origins:change_resource",
-    "resource": "*:colormeter",
-    "change": -1
-  },
-  "interval": 80,
-  "condition": {
-    "type": "origins:fall_flying"
-  }
+    "hidden": true,
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:change_resource",
+        "resource": "*:colormeter",
+        "change": -1
+    },
+    "interval": 80,
+    "condition": {
+        "type": "origins:fall_flying"
+    }
 }

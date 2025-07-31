@@ -1,14 +1,14 @@
 {
-  "name": "§0§nToo bright",
-  "description": "§0Being on fire blinds you.",
+    "name": "§0§nToo bright",
+    "description": "§0Being on fire blinds you.",
     "type": "origins:action_over_time",
     "entity_action": {
-      "type": "origins:apply_effect",
-    "effect": {
-        "effect": "minecraft:blindness",
-        "duration": 60,
-        "amplifier": 0
-    }
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:blindness",
+            "duration": 60,
+            "amplifier": 0
+        }
     },
     "interval": 20,
     "condition": {

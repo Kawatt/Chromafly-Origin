@@ -1,117 +1,117 @@
 {
-  "name": "§d§nShiny",
-  "description": "§dYou are slightly transparent. The glowing effect lasts longer.",
-  "type": "origins:multiple",
-  "transparent": {
-    "type": "origins:model_color",
-    "alpha": 0.9
-  },
-  "darker": {
-    "type": "origins:model_color",
-    "red": 0.7,
-    "green": 0.7,
-    "blue": 0.7,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:colormeter",
-      "comparison": "<",
-      "compare_to": 160
-    }
-  },
-  "bright": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "effect": "minecraft:glowing",
-        "duration": 30,
-        "amplifier": 0,
-        "is_ambient": true,
-        "show_particles": false,
-        "show_icon": true
-      }
+    "name": "§d§nShiny",
+    "description": "§dYou are slightly transparent. The glowing effect lasts longer.",
+    "type": "origins:multiple",
+    "transparent": {
+        "type": "origins:model_color",
+        "alpha": 0.9
     },
-    "interval": 100,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:colormeter",
-      "comparison": ">",
-      "compare_to": 480
-    }
-  },
-  "bright_liberation": {
-    "type": "origins:action_over_time",
-    "entity_action": {
-      "type": "origins:change_resource",
-      "resource": "*:colormeter",
-      "change": -1
+    "darker": {
+        "type": "origins:model_color",
+        "red": 0.7,
+        "green": 0.7,
+        "blue": 0.7,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "<",
+            "compare_to": 160
+        }
     },
-    "interval": 100,
-    "condition": {
-      "type": "origins:resource",
-      "resource": "*:colormeter",
-      "comparison": ">",
-      "compare_to": 480
-    }
-  },
-  "charging1": {
-    "type": "origins:particle",
-    "particle": {
-      "type": "minecraft:dust",
-      "params": "1 1 0.5 1"
+    "bright": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:glowing",
+                "duration": 30,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            }
+        },
+        "interval": 100,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": ">",
+            "compare_to": 480
+        }
     },
-    "frequency": 10,
-    "visible_in_first_person": false,
-    "condition": {
-      "type": "origins:block_in_radius",
-      "block_condition": {
-        "type": "origins:in_tag",
-        "tag": "*:geodes"
-      },
-      "radius": 8,
-      "shape": "sphere",
-      "comparison": ">=",
-      "compare_to": 4
-    }
-  },
-  "charging2": {
-    "type": "origins:particle",
-    "particle": {
-      "type": "minecraft:dust",
-      "params": "0.5 1 1 1"
+    "bright_liberation": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "interval": 100,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": ">",
+            "compare_to": 480
+        }
     },
-    "frequency": 10,
-    "visible_in_first_person": false,
-    "condition": {
-      "type": "origins:block_in_radius",
-      "block_condition": {
-        "type": "origins:in_tag",
-        "tag": "*:geodes"
-      },
-      "radius": 8,
-      "shape": "sphere",
-      "comparison": ">=",
-      "compare_to": 4
-    }
-  },
-  "charging3": {
-    "type": "origins:particle",
-    "particle": {
-      "type": "minecraft:dust",
-      "params": "1 0.5 1 1"
+    "charging1": {
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:dust",
+            "params": "1 1 0.5 1"
+        },
+        "frequency": 10,
+        "visible_in_first_person": false,
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+              "type": "origins:in_tag",
+              "tag": "*:geodes"
+            },
+            "radius": 8,
+            "shape": "sphere",
+            "comparison": ">=",
+            "compare_to": 4
+        }
     },
-    "frequency": 10,
-    "visible_in_first_person": false,
-    "condition": {
-      "type": "origins:block_in_radius",
-      "block_condition": {
-        "type": "origins:in_tag",
-        "tag": "*:geodes"
-      },
-      "radius": 8,
-      "shape": "sphere",
-      "comparison": ">=",
-      "compare_to": 4
+    "charging2": {
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:dust",
+            "params": "0.5 1 1 1"
+        },
+        "frequency": 10,
+        "visible_in_first_person": false,
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "*:geodes"
+            },
+            "radius": 8,
+            "shape": "sphere",
+            "comparison": ">=",
+            "compare_to": 4
+        }
+    },
+    "charging3": {
+        "type": "origins:particle",
+        "particle": {
+            "type": "minecraft:dust",
+            "params": "1 0.5 1 1"
+        },
+        "frequency": 10,
+        "visible_in_first_person": false,
+        "condition": {
+            "type": "origins:block_in_radius",
+            "block_condition": {
+                "type": "origins:in_tag",
+                "tag": "*:geodes"
+            },
+            "radius": 8,
+            "shape": "sphere",
+            "comparison": ">=",
+            "compare_to": 4
+        }
     }
-  }
 }

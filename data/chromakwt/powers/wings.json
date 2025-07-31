@@ -1,7 +1,7 @@
 {
-  "name": "§c§nOdonata Wings",
-  "description": "§cYou have the delicate wings of a dragonfly. §0Flying with them will slowly decrease your color meter.",
-  "type": "origins:elytra_flight",
-  "render_elytra": true,
-  "texture_location": "chromakwt:textures/entity/odonata.png"
+    "name": "§c§nOdonata Wings",
+    "description": "§cYou have the delicate wings of a dragonfly. §0Flying with them will slowly decrease your color meter.",
+    "type": "origins:elytra_flight",
+    "render_elytra": true,
+    "texture_location": "chromakwt:textures/entity/odonata.png"
 }
