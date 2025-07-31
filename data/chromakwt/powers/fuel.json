@@ -1,0 +1,31 @@
+{
+  "name": "§0§nMade of color",
+  "description": "§0Running out of color or being over charged will cause you to get hurt.",
+  "type": "origins:damage_over_time",
+    "interval": 40,
+    "onset_delay": 20,
+    "damage": 1,
+    "damage_easy": 1,
+    "damage_source": {
+        "name": "wither",
+        "magic": true,
+        "bypasses_armor": true
+    },
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "*:colormeter",
+          "comparison": "<",
+          "compare_to": 80
+        },
+        {
+          "type": "origins:resource",
+          "resource": "*:colormeter",
+          "comparison": ">",
+          "compare_to": 560
+        }
+      ] 
+    }
+}

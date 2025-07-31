@@ -1,0 +1,448 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "block": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_block"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_block"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:block"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "lamp": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_lamp"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_lamp"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:lamp"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "glowblock": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_glowblock"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_glowblock"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:glowblock"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "planks": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_planks"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_planks"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:planks"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "log": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_log"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_log"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:log"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    },
+    "leaves": {
+        "type": "origins:action_on_block_use",
+        "block_action": {
+            "type": "origins:choice",
+            "actions": [
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:brown_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:red_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:orange_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:yellow_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:lime_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:green_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_blue_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:cyan_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:blue_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:purple_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:magenta_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:pink_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:white_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:light_gray_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:gray_leaves"
+                    },  "weight": 10 },
+                {   "element": {    "type": "origins:set_block",
+                        "block": "spectrum:black_leaves"
+                    },  "weight": 10 }
+            ]
+        },
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "*:leaves"
+        },
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -1
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+        },
+        "item_condition": {
+            "type": "origins:empty"
+        }
+    }
+}

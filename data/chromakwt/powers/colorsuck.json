@@ -1,0 +1,128 @@
+{
+  "name": "§e§nColor Absorption",
+  "description": "§eYou shoot a ray that absorbs the color from an entity.",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability, use with [secondary]"
+    },
+    {
+        "sprite": "origins:textures/gui/badge/info.png",
+        "text": "Activates while on the ground"
+    },
+    {
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "+80 color"
+    }
+  ],
+  "type": "origins:multiple",
+  "raycast": {
+    "type": "origins:active_self",
+    "key": {
+      "key": "key.origins.secondary_active"
+    },
+    "entity_action": {
+    "type": "origins:raycast",
+    "distance": 16,
+    "bientity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:target_action",
+      "action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:wither",
+                "duration": 100,
+                "amplifier": 0
+            }
+          },
+          {
+            "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:blindness",
+                "duration": 100,
+                "amplifier": 0
+            }
+          },
+          {
+            "type": "origins:grant_power",
+            "power": "*:darkworld",
+            "source": "*:colorsuck"
+          },
+          {
+            "type": "origins:grant_power",
+            "power": "*:darkworld2",
+            "source": "*:colorsuck"
+          },
+          {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_removeshader"
+          },
+          {
+            "type": "origins:play_sound",
+            "sound": "minecraft:ambient.soul_sand_valley.mood"
+          }
+        ]
+      }
+        },
+        {
+          "type": "origins:actor_action",
+          "action": {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": 80
+          }
+        }
+      ]
+    },
+    "command_along_ray": "execute as @s run function chromakwt:ark",
+    "command_step": 1
+  },
+  "cooldown": 2400,
+  "hud_render": {
+    "bar_index": 2,
+    "sprite_location": "chromakwt:textures/gui/community/kawat/resource_bar_01.png"
+  },
+  "condition": {
+    "type": "origins:fall_flying",
+    "inverted": true
+  }
+  },
+  "removeshader": {
+    "type": "origins:cooldown",
+    "cooldown": 160,
+    "hud_render": {
+        "should_render": true,
+        "bar_index": 3
+    }
+  },
+  "minshader": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:execute_command",
+          "command": "power revoke @e chromakwt:darkworld chromakwt:rainbowinfection",
+          "permission_level": 4
+        },
+        {
+          "type": "origins:execute_command",
+          "command": "power revoke @e chromakwt:darkworld2 chromakwt:rainbowinfection",
+          "permission_level": 4
+        }
+      ]
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_removeshader",
+      "comparison": "==",
+      "compare_to": 0
+    }
+  }
+}

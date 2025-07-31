@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "spectrum:brown_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:red_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:orange_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:yellow_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:lime_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:green_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_blue_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:cyan_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:blue_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:purple_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:magenta_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:pink_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:white_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_gray_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:gray_glowblock",
+      "required": false
+    },
+    {
+      "id": "spectrum:black_glowblock",
+      "required": false
+    }
+  ]
+}

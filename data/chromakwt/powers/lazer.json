@@ -1,0 +1,28 @@
+{
+    "name": "§a§nExplosive Glint",
+    "description": "§aYou can shoot a firework and are immune to firework damage.",
+    "badges": [
+        {
+            "sprite": "origins:textures/gui/badge/active.png",
+            "text": "Active ability, use with [primary]"
+        },
+        {
+          "sprite": "origins:textures/gui/badge/star.png",
+          "text": "-10 color"
+        }
+    ],
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:firework_rocket",
+	"tag": "{LifeTime:7,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:2,Flicker:1,Trail:0,Colors:[I;11743532,14602026,6719955],FadeColors:[I;15790320]},{Type:1,Flicker:1,Trail:0,Colors:[I;8073150,4312372,15435844],FadeColors:[I;15790320]}]}}}}",
+    "cooldown": 30,
+	"sound": "minecraft:entity.evoker.cast_spell",
+    "hud_render": {
+        "should_render": false
+    },
+    "condition": {
+        "type": "origins:resource",
+        "resource": "*:colormeter",
+        "comparison": "!=",
+        "compare_to": 0
+    }
+}

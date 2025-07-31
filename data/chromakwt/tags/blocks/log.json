@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "spectrum:brown_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:red_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:orange_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:yellow_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:lime_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:green_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_blue_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:cyan_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:blue_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:purple_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:magenta_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:pink_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:white_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_gray_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:gray_log",
+      "required": false
+    },
+    {
+      "id": "spectrum:black_log",
+      "required": false
+    }
+  ]
+}

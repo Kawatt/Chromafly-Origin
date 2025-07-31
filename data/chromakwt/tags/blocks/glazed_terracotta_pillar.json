@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:red_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:green_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:white_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_glazed_terracotta_pillar",
+      "required": false
+    },
+    {
+      "id": "blockus:black_glazed_terracotta_pillar",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "§c§nCamouflage",
+  "description": "§cYou can make your armor look transparent.",
+  "type": "origins:multiple",
+  "toggle": {
+    "type": "origins:toggle",
+    "active_by_default": false,
+		"key": {
+			"key": "key.saveToolbarActivator"
+		}
+  },
+  "hidearmor": {
+    "type": "origins:prevent_feature_render",
+    "features": [
+      "armor"
+    ],
+    "condition": {
+      "type": "origins:power_active",
+			"power": "*:*_toggle"
+    }
+  }
+}

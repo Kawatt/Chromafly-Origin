@@ -1,0 +1,33 @@
+{
+	"powers": [
+		"chromakwt:wings",
+		"chromakwt:boost",
+		"chromakwt:colorsuck",
+		"chromakwt:lazer",
+		"chromakwt:lazer2",
+		"chromakwt:flybomb",
+		"chromakwt:flybounce",
+		"chromakwt:colormeter",
+		"chromakwt:callback",
+		"chromakwt:amethyst",
+		"chromakwt:camouflage",
+		"chromakwt:shiny",
+		"chromakwt:colorswap/minecraft",
+		"chromakwt:colorswap/blockus",
+		"chromakwt:colorswap/spectrum",
+		"chromakwt:fillmeter",
+		"chromakwt:explode",
+		"chromakwt:fuel",
+		"chromakwt:flydown",
+		"chromakwt:toobright",
+		"chromakwt:darkness"
+	],
+	"icon": {
+		"item": "minecraft:spectral_arrow",
+		"tag" : "{CutomModelData:25467241,Enchantments:[{}]}"
+	},
+	"order": 10,
+	"impact": 3,
+	"name": "§cC§dh§er§ao§bm§ca§df§el§ay",
+	"description": "§fA §cc §do §el §ao §br §cf §du §el §fworld is a better world."
+}

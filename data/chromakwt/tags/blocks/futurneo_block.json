@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:red_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:green_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:white_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_futurneo_block",
+      "required": false
+    },
+    {
+      "id": "blockus:black_futurneo_block",
+      "required": false
+    }
+  ]
+}

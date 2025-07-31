@@ -1,0 +1,8 @@
+{
+  "name": "Camouflage",
+  "description": "You can make your armor look transparent",
+  "type": "origins:model_color",
+  "red": 0.3,
+  "green": 0.3,
+  "blue": 0.3
+}

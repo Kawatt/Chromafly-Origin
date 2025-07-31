@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:red_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:green_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:white_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_patterned_wool",
+      "required": false
+    },
+    {
+      "id": "blockus:black_patterned_wool",
+      "required": false
+    }
+  ]
+}

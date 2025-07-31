@@ -1,0 +1,121 @@
+{
+  "name": "§b§nErratic Crystal",
+  "description": "§bYou are immune to kinetyc damage and bounce on walls, but might combust because of the friction. Each time you hit a wall, you will leave a burst of color.",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "-4 color"
+    }
+  ],
+  "type": "origins:multiple",
+  "bounce": {
+    "type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+    	"name": "flyIntoWall"
+		},
+    "condition": {
+      "type": "origins:fall_flying"
+    },
+    "self_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": -0.1,
+            "offset_z": 0
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "y": 1.2,
+            "set": true
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0.1,
+            "offset_y": 0,
+            "offset_z": 0
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "x": -1,
+            "set": true
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": -0.1,
+            "offset_y": 0,
+            "offset_z": 0
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "x": 1,
+            "set": true
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": 0,
+            "offset_z": 0.1
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "z": -1,
+            "set": true
+          }
+        },
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": 0,
+            "offset_z": -0.1
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "z": 1,
+            "set": true
+          }
+        }
+      ]
+    }
+  },
+  "bounce2": {
+    "type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+    	"name": "fall"
+		},
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:flybomb_isflying",
+      "comparison": ">",
+      "compare_to": 0
+    },
+    "self_action": {
+      "type": "origins:if_else_list",
+      "actions": [
+        {
+          "condition": {
+            "type": "origins:block_collision",
+            "offset_x": 0,
+            "offset_y": -0.1,
+            "offset_z": 0
+          },
+          "action": {
+            "type": "origins:add_velocity",
+            "y": 1.2
+          }
+        }
+      ]
+    }
+  }
+}

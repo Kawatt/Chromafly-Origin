@@ -1,0 +1,191 @@
+{
+  "hidden": true,
+  "type": "origins:multiple",
+  "nokinetyc": {
+    "type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_base",
+			"value": -1
+		},
+		"damage_condition": {
+			"type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:name",
+    	    "name": "flyIntoWall"
+        },
+        {
+          "type": "origins:name",
+    	    "name": "fall"
+        }
+      ]
+		},
+    "self_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:resource",
+            "resource": "*:*_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+          },
+          {
+            "type": "origins:resource",
+            "resource": "*:colormeter",
+            "comparison": "!=",
+            "compare_to": 0
+          }
+        ]
+      },
+      "if_action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:choice",
+            "actions": [
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;8073150],FadeColors:[I;15435844]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;15435844],FadeColors:[I;8073150]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;6719955],FadeColors:[I;14188952]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;14188952],FadeColors:[I;6719955]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;4312372],FadeColors:[I;11743532]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;11743532],FadeColors:[I;4312372]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;14602026],FadeColors:[I;2437522]}]}}}}"
+                },
+                "weight": 10
+              },
+              {
+                "element": {
+                  "type": "origins:execute_command",
+                  "command": "summon firework_rocket ~ ~1 ~ {LifeTime:0,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:1,Explosions:[{Type:1,Flicker:1,Trail:0,Colors:[I;2437522],FadeColors:[I;14602026]}]}}}}"
+                },
+                "weight": 10
+              }
+            ]
+          },
+          {
+            "type": "origins:change_resource",
+            "resource": "*:*_cooldown",
+            "change": 2
+          },
+          {
+            "type": "origins:chance",
+            "action": {
+              "type": "origins:set_on_fire",
+              "duration": 2
+            },
+            "chance": 0.1
+          },
+          {
+            "type": "origins:change_resource",
+            "resource": "*:colormeter",
+            "change": -4
+          }
+        ]
+      }
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "*:*_isflying",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  
+  "nofireworks": {
+    "type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_base",
+			"value": -1
+		},
+		"damage_condition": {
+			"type": "origins:name",
+    	"name": "fireworks"
+		}
+  },
+  "isflying": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 3,
+    "hud_render": {
+        "should_render": false
+    }
+  },
+  "flying": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:fall_flying"
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_isflying",
+        "change": 1
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "*:*_isflying",
+        "change": -1
+      }
+    },
+    "interval": 5
+  },
+  "cooldown": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 2,
+    "hud_render": {
+        "should_render": false
+    }
+  },
+  "cooldownmanagement": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "*:*_cooldown",
+      "change": -1
+    },
+    "interval": 5
+  }
+}

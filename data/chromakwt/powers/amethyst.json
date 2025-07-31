@@ -1,0 +1,21 @@
+{
+  "hidden": true,
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "*:colormeter",
+    "change": 1
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:block_in_radius",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "*:geodes"
+    },
+    "radius": 8,
+    "shape": "sphere",
+    "comparison": ">=",
+    "compare_to": 4
+  }
+}

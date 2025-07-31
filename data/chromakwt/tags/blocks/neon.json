@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:red_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:green_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:white_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_neon",
+      "required": false
+    },
+    {
+      "id": "blockus:black_neon",
+      "required": false
+    }
+  ]
+}

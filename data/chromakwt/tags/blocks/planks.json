@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "spectrum:brown_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:red_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:orange_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:yellow_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:lime_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:green_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_blue_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:cyan_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:blue_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:purple_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:magenta_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:pink_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:white_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:light_gray_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:gray_planks",
+      "required": false
+    },
+    {
+      "id": "spectrum:black_planks",
+      "required": false
+    }
+  ]
+}

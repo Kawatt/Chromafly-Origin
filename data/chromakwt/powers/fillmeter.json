@@ -1,0 +1,94 @@
+{
+  "name": "§a§nPigment Absorption",
+  "description": "§aYou can refill your color bar with dyes and by being around geodes.",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability, use with [Right Button]"
+    },
+    {
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "+10 color"
+    }
+  ],
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:if_else_list",
+    "actions": [
+      {
+        "condition": {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "*:dyes"
+            }
+          }
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:change_resource",
+              "resource": "*:colormeter",
+              "change": 10
+            },
+            {
+              "type": "origins:equipped_item_action",
+              "equipment_slot": "mainhand",
+              "action": {
+                "type": "origins:consume",
+                "amount": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "condition": {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "*:dyes_great"
+            }
+          }
+        },
+        "action": {
+          "type": "origins:and",
+          "actions": [
+            {
+              "type": "origins:change_resource",
+              "resource": "*:colormeter",
+              "change": 20
+            },
+            {
+              "type": "origins:equipped_item_action",
+              "equipment_slot": "mainhand",
+              "action": {
+                  "type": "origins:consume",
+                  "amount": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "key": {
+    "key": "key.use",
+    "continuous": true
+  },
+  "cooldown": 2,
+  "hud_render": {
+    "should_render": false
+  },
+  "condition": {
+    "type": "origins:resource",
+    "resource": "*:colormeter",
+    "comparison": "<",
+    "compare_to": 640
+  }
+}

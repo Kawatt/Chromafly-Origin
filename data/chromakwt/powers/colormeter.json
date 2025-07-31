@@ -1,0 +1,11 @@
+{
+  "hidden": true,
+  "type": "origins:resource",
+  "min": 0,
+  "max": 640,
+  "start_value": 320,
+  "hud_render": {
+    "bar_index": 0,
+    "sprite_location": "chromakwt:textures/gui/community/kawat/resource_bar_01.png"
+  }
+}

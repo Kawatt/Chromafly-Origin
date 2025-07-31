@@ -1,0 +1,65 @@
+{
+  "name": "§d§nFast as light",
+  "description": "§dYou can boost yourself on air.",
+  "badges": [
+    {
+      "sprite": "origins:textures/gui/badge/active.png",
+      "text": "Active ability, use with [secondary]"
+    },
+    {
+        "sprite": "origins:textures/gui/badge/info.png",
+        "text": "Activates while flying"
+    },
+    {
+      "sprite": "origins:textures/gui/badge/star.png",
+      "text": "-20 color"
+    }
+  ],
+  "type": "origins:active_self",
+  "key": {
+    "key": "key.origins.secondary_active"
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:add_velocity",
+        "z": 1.2,
+        "space": "local"
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @s run function chromakwt:boost",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:change_resource",
+        "resource": "*:colormeter",
+        "change": -20
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.firework_rocket.launch"
+      }
+    ]
+  },
+  "cooldown": 140,
+  "hud_render": {
+    "bar_index": 1,
+    "sprite_location": "chromakwt:textures/gui/community/kawat/resource_bar_01.png"
+  },
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:fall_flying"
+      },
+      {
+        "type": "origins:resource",
+        "resource": "*:colormeter",
+        "comparison": "!=",
+        "compare_to": 0
+      }
+    ]
+  }
+}

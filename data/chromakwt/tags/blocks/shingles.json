@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:red_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:green_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:white_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_shingles",
+      "required": false
+    },
+    {
+      "id": "blockus:black_shingles",
+      "required": false
+    }
+  ]
+}

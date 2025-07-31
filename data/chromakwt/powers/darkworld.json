@@ -1,0 +1,6 @@
+{
+  "name": "Odonata Wings",
+  "description": "You have the delicate wings of a dragonfly.",
+  "type": "origins:shader",
+  "shader": "minecraft:shaders/post/desaturate.json"
+}

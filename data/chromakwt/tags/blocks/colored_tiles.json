@@ -1,0 +1,69 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "blockus:brown_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:red_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:orange_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:yellow_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:lime_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:green_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:light_blue_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:cyan_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:blue_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:purple_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:magenta_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:pink_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:white_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:light_gray_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:gray_colored_tiles",
+      "required": false
+    },
+    {
+      "id": "blockus:black_colored_tiles",
+      "required": false
+    }
+  ]
+}
