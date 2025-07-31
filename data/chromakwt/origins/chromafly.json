@@ -4,7 +4,6 @@
 		"chromakwt:boost",
 		"chromakwt:colorsuck",
 		"chromakwt:lazer",
-		"chromakwt:lazer2",
 		"chromakwt:flybomb",
 		"chromakwt:flybounce",
 		"chromakwt:colormeter",
@@ -24,7 +23,7 @@
 	],
 	"icon": {
 		"item": "minecraft:spectral_arrow",
-		"tag" : "{CutomModelData:25467241,Enchantments:[{}]}"
+		"tag" : "{CustomModelData:25467241}"
 	},
 	"order": 10,
 	"impact": 3,

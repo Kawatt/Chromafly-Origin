@@ -3,8 +3,9 @@
     "description": "§eYou can randomly change the color of a block.",
     "badges": [
         {
-          "sprite": "origins:textures/gui/badge/star.png",
-          "text": "-1 color"
+            "type": "origins:tooltip",
+            "sprite": "origins:textures/gui/badge/star.png",
+            "text": "-1 color"
         }
     ],
     "type": "origins:multiple",
