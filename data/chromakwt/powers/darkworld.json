@@ -1,6 +1,33 @@
 {
-  "name": "Odonata Wings",
-  "description": "You have the delicate wings of a dragonfly.",
-  "type": "origins:shader",
-  "shader": "minecraft:shaders/post/desaturate.json"
+    "name": "Darkworld",
+    "description": "Power granted by Color Absorption.",
+    "type": "apoli:multiple",
+    "shader": {
+        "type": "origins:shader",
+        "shader": "minecraft:shaders/post/desaturate.json"
+    },
+    "texture": {
+        "type": "origins:model_color",
+        "red": 0.3,
+        "green": 0.3,
+        "blue": 0.3
+    },
+    "res": {
+        "type": "apoli:resource",
+        "min": 0,
+        "max": 8,
+        "max_action": {
+            "type": "apoli:remove_power",
+            "power": "*:*"
+        }
+    },
+    "time": {
+        "type": "apoli:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "apoli:change_resource",
+            "resource": "*:*_res",
+            "change": 1
+        }
+    }
 }
